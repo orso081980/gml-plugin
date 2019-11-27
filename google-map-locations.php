@@ -47,7 +47,7 @@ add_action( 'wp_ajax_nopriv_gml_show', 'gml_show' );
 
 function gml_scripts() {
     $plugin_url = plugin_dir_url( __FILE__ );
-    wp_register_script( 'googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBvgVC2I8UJXn7rIFJcztFTYG0I47COzkY', '', '', true );
+    wp_register_script( 'googlemaps', 'https://maps.googleapis.com/maps/api/js?key=key', '', '', true );
     
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', '', '', true );
